@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Raleway:300i');
+body{
+    background:-moz-linear-gradient(120deg,#B2905A,#FFE2B4,#FFD79B,#618EB2,#A2D5FF);
+    background:-webkit-linear-gradient(120deg,#B2905A,#FFE2B4,#FFD79B,#618EB2,#A2D5FF);
+    background:-o-linear-gradient(120deg,#B2905A,#FFE2B4,#FFD79B,#618EB2,#A2D5FF);
+    background:-ms linear-gradient(120deg,#B2905A,#FFE2B4,#FFD79B,#618EB2,#A2D5FF);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.toppage{
+    width:800px;
+    margin:auto;
+    margin-bottom:20px;
+    height:50px;
+    padding:20px;
+    border-style:solid;
+    background-color:white;
+}
+h1{
+    position:relative;
+    text-align:center;
+    font-family: 'Cabin', sans-serif;
+    font-size:40px;
+    transform:translate(0px, -25px)
+}
+main{
+    width:800px;
+    margin:auto;
+    padding:20px;
+    font-size:16px;
+    font-family: 'Raleway', sans-serif;
+    border-style:solid;
+    border-radius:5px;
+    background-color:white;
+}
+.infophoto{
+    height:200px;
+}
+.info{
+    margin-top:16px;
+    float:left;
+    font-size:20px;
+}
+.photo{
+    height:200px;
+    width:200px;
+    float:right;
+    border-style:solid;
+}
+.colonne_g{
+    float:left;
+    font-weight:bold;
+    font-size:18px;
+}
+.colonne_d{
+    margin-left:250px;
+    margin-top:36px;
+}
+.title{
+    font-weight:bold;
+    font-size:18px;
+}
+.cat{
+    margin-bottom:50px;
+    text-align:justify;
+}
+.duree{
+    font-weight:normal;
+    color:grey;
+    font-style:italic;
+}
+h2{
+    font-size:26px;
+    font-weight:bold;
+    text-transform:uppercase;
+    border-bottom: 3px solid black;
+}
+#forma p{margin-bottom:35px;}
+#prod p{margin-bottom:20px}
+#lang{margin-bottom:52px;}
+#d33{margin-bottom:33px;}
+#d30{margin-bottom:30px;}
+#inf{margin:0px;
+line-height:30px;}
+#smalup{font-variant:small-caps}
+#last p{margin-bottom:18px;}
