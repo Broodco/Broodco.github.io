@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="stylesw.css">
+    <script language="javascript" type="text/javascript">
+        window.onload = function() {
+            const numStars = 200;
+            function getRandomPosition() {  
+                var y = window.innerWidth;
+                var x = window.innerHeight;
+                var randomX = Math.floor(Math.random()*x);
+                var randomY = Math.floor(Math.random()*y);
+                return [randomX,randomY];
+            }
+            for (let i = 0; i < numStars; i++) {
+                var div = document.createElement("div");  
+                div.className = 'star';
+                var xy = getRandomPosition();
+                div.style.top = xy[0] + 'px';
+                div.style.left = xy[1] + 'px';
+                document.body.appendChild(div);
+            }
+        }
+    </script>
+    <title>Star Wars Crawl</title>
+</head>
+<body>
+    <audio preload="auto" autoplay>
+        <source src="Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg">
+    </audio>    
+            
+    <div class="intro">Enim non sit laborum dolore deserunt</br> do irure adipisicing occaecat eu.</div>
+    <div class="logo">LOREM IPSUM</div>
+    <div class="star-wars">
+        <article class="crawl">
+            <div class="title">
+                <h2>Lorem Ipsum</h2>
+            </div>  
+            <p>Labore deserunt enim qui incididunt sit laboris consequat. Ad et labore culpa quis labore velit amet commodo dolor. Non sint exercitation non sint ex excepteur. Sint enim ea ad id consequat ex id laborum. Adipisicing Lorem ex Lorem proident cupidatat nostrud ad cupidatat enim do ea in qui.</p>
+            <p>Lorem cupidatat magna cillum fugiat deserunt nulla velit ex ullamco minim ad sint qui. Laborum anim Lorem adipisicing officia excepteur Lorem esse fugiat qui consequat consectetur. Do non non et incididunt et amet deserunt ea ullamco nulla ullamco. Cillum sint velit adipisicing duis anim et amet. Voluptate aute voluptate enim non fugiat et Lorem eiusmod do ipsum mollit exercitation commodo in.</p>
+            <p>Dolor qui culpa reprehenderit sint culpa aute ullamco consectetur voluptate ex irure ea eu elit. Id incididunt do et sint sint consequat cupidatat exercitation esse consectetur ea. Laboris aliqua nulla sit esse voluptate enim et culpa cillum voluptate.</p>
+            <p>Consectetur ullamco est culpa consequat. Ea nostrud sit eu exercitation laboris elit veniam ipsum consequat laborum fugiat laboris deserunt. Veniam minim veniam consectetur dolore incididunt nisi ad minim nisi reprehenderit fugiat magna in dolore. Reprehenderit ipsum non enim nisi nostrud nulla in sit consectetur esse ea veniam aute adipisicing. Aliqua fugiat laborum ullamco quis ex exercitation duis nostrud. Reprehenderit ex ipsum sit qui velit culpa ullamco id.</p>
+            <p>Consequat labore reprehenderit adipisicing cillum do. Deserunt ullamco incididunt veniam sit deserunt commodo. Voluptate in incididunt non tempor ullamco esse id. Occaecat nulla ullamco irure nostrud incididunt voluptate. Excepteur ex ipsum occaecat ex velit anim pariatur ipsum sint pariatur. Laborum anim labore elit esse est ea Lorem dolore ad. Magna elit occaecat anim exercitation mollit ad laborum reprehenderit.</p>
+            <p>Ullamco tempor non non anim minim fugiat ex consequat adipisicing incididunt velit est. Magna reprehenderit laboris eu esse aute. Duis ad non irure cupidatat eiusmod in. In mollit magna dolore ad esse elit enim cillum ullamco pariatur cupidatat minim. Elit quis enim reprehenderit enim nostrud eu cillum qui commodo et consequat ut.</p>
+            <p>Non voluptate deserunt ipsum irure sint nulla eu laborum. Ex ut Lorem laboris duis excepteur laborum nisi aliqua mollit laborum ipsum ad eu anim. Est commodo est irure ut minim sint labore cillum laboris. Ad non consequat in ullamco.</p>
+            <p>Enim incididunt proident consequat qui velit velit. Minim amet ipsum nisi et culpa nostrud minim eiusmod minim labore sit occaecat reprehenderit. Elit incididunt ut commodo exercitation nulla sint dolor enim esse aliquip commodo. Deserunt consequat ut consequat ex irure sit magna et.</p>
+        </article>
+    </div>
+</body>
+</html>
