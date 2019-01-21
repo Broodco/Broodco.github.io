@@ -44,9 +44,9 @@ header, main{
     border: 3px solid lightgray;
 }
 #button{
-    padding:20px;
+    padding:1em;
     background-color:#d42a2a;
-    border-radius:10px;
+    border-radius:0.5em;
     text-decoration: none;
     font-weight:700;
     color:white;
@@ -56,12 +56,9 @@ nav{
 }
 nav ul{
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     list-style-type:none;
     padding:0;
-}
-nav ul li{
-    margin: 0 20px;
 }
 nav ul li a{
     text-decoration: none;
@@ -69,7 +66,6 @@ nav ul li a{
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 10px;
 }
 i{
     margin: 0 0 10px 0;
@@ -93,6 +89,12 @@ i{
 /* Mise en page pour appareil avec résolution <768px */
 
 @media only screen and (max-width:768px){
+    *{
+        margin:O;
+        padding:0;
+        box-sizing: border-box;
+        font-size:5vw;
+    }
     body{
         width:100%;
         display:flex;
@@ -104,11 +106,20 @@ i{
     }
     header, nav, main{
         width:100vw;
-        margin:0;
+        margin: 0;
     }
     h1, h2, h3{
         white-space:nowrap;
-        font-size:auto;
+        margin: 10px 15%;
+    }
+    h1{
+        font-size: 7vw;
+    }
+    h2{
+        font-size:6vw;
+    }
+    h3{
+        font-size: 5vw;
     }
     nav{
         padding: 20px;
@@ -125,15 +136,25 @@ i{
     .movie{
         display:flex;
         flex-direction: column;
-        padding-left:0;
+        padding : 0;
+    }
+    .desc{
+        padding:0;
+        line-height: 1.5em;
     }
     .cover{
         width:50%;
         padding:0;
         margin:0;
     }
-    .desc{
-        padding-left:10px;
-    }
 
+}
+@media only screen and (max-width:300px){
+    .body{
+        min-width: 280px;
+        overflow-x:scroll;
+    }
+    #tim{
+        margin:10px 30%;
+    }
 }
