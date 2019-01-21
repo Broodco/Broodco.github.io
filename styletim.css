@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+/* Mise en page standard, pour navigateur avec résolution >768px */
+
+body{
+    display:grid;
+    grid-template-columns: auto 768px auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    color:gray;
+    background-color:rgb(233, 230, 230);
+    text-align:justify;
+}
+h1, h2, h3{
+    text-align:center; 
+    font-family: 'Open Sans', sans-serif;
+    margin:10px;
+}
+h1{
+    color:#d42a2a;
+    font-weight: 700;
+    font-size:45px;
+    letter-spacing: 0.01rem;
+}
+header, nav, main{
+    grid-column:2;
+    margin: 10px 0;
+    background-color:#FFFFFF;
+    border-radius:10px;
+    border: 1px solid rgb(168, 166, 166);
+    padding:20px;
+}
+header, main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#tim{
+    margin:10px;
+    width : 150px;
+    height:150px;
+    border-radius:50%;
+    border: 3px solid lightgray;
+}
+#button{
+    padding:20px;
+    background-color:#d42a2a;
+    border-radius:10px;
+    text-decoration: none;
+    font-weight:700;
+    color:white;
+}
+nav{
+    padding:40px 20px;
+}
+nav ul{
+    display:flex;
+    justify-content: center;
+    list-style-type:none;
+    padding:0;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:gray;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+i{
+    margin: 0 0 10px 0;
+    transform:scale(1.5);
+}
+.movie{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 20% 80%;
+    padding: 10px 0px 10px 20px;
+    margin: 20px 0px;
+}
+.cover{
+    width:100%
+}
+.desc{
+    padding: 0 10px 0 30px ;
+    line-height: 1.5em;
+}
+
+/* Mise en page pour appareil avec résolution <768px */
+
+@media only screen and (max-width:768px){
+    body{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+    }
+    header, nav, main{
+        width:100vw;
+        margin:0;
+    }
+    h1, h2, h3{
+        white-space:nowrap;
+        font-size:auto;
+    }
+    nav{
+        padding: 20px;
+    }
+    nav ul{
+        display:flex;
+        justify-items: center;
+        align-items: center;
+        width:auto;
+    }
+    nav ul li{
+        margin:0;
+    }
+    .movie{
+        display:flex;
+        flex-direction: column;
+        padding-left:0;
+    }
+    .cover{
+        width:50%;
+        padding:0;
+        margin:0;
+    }
+    .desc{
+        padding-left:10px;
+    }
+
+}
