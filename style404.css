@@ -16,78 +16,99 @@
         transform: rotate3d(0, 0, 1, 0deg);
       }
 }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 body{
-    height: 100%;
-    width:100%;
+    height: 100vh;
+    width:100vw;
+    display:grid;
+    grid-template-rows: 10% 50% 10% 20% 10%;
+    grid-template-columns: repeat(10, 10%);
     font-family: Arial, Helvetica, sans-serif;
     background-image:url("brickwall.jpg");
     overflow:hidden;
 }
 section.mainbox{
-    height:400px;
-    width:100%;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,0%);
+    grid-row: 2 / 3;
+    grid-column: 3 / span 6;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 article.header{
-    position:relative;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%, 0%);
     text-align:center;
     font-family: 'Cabin', sans-serif;
-    font-size: 50px;
+    font-size: 3vw;
     font-weight:bold;
 }
 article.text{
-    position:relative;
-    left: 50%;
-    top:20%;
-    transform: translate(-50%, 0%);
     text-align:center;
     font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
     font-style:italic;
 }
-section.button{
-    position: relative;
-    left: 50%;
-    top: 65%;
-    margin-top: -50px;
-    margin-left:-100px;
+.button{
     height:100px;
     width:200px;
+    justify-self: center;
+    grid-column: 5 / span 2;
+    grid-row: 4;
     background:rgba(0,0,0,0);
-    border-style:solid;
-    border-width:3px;
-    border-color:black;
-    opacity:0.7;
-    border-radius:15px;
+    border: 3px solid rgb(83, 83, 83);
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
-section.button:hover{
+.button:hover{
     transform-origin: top center;
     animation-name:swing;
     animation-duration: 2s;
     cursor: pointer;
 }
-
-article.textbutton{
-    position:absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    vertical-align:middle;
-    text-align:center;
-    font-family: 'Cabin', sans-serif;
-    color:black;
-    font-size: 26px;
-    font-weight: bold;
+.button a{
+    text-decoration: none;
+    color:rgb(51, 49, 49);
+    font: bold 26px 'Cabin', sans-serif;
     text-transform: uppercase;
     letter-spacing:2px;
-    text-decoration:none;
 }
-a {
-    color:inherit;
-    text-decoration: none;
+@media only screen and (max-width:768px){
+    article.header{
+        font-size: 4vw;
+    }
+    article.text{
+        font-size: 3vw;
+    }
+    .button{
+        height:75px;
+        width:150px;
+    }
+    .button a{
+        font-size: 19.5px;
+    }
+}
+@media only screen and (max-width:400px){
+    article.header{
+        font-size: 5vw;
+    }
+    article.text{
+        font-size: 4vw;
+    }
+    .button{
+        height:50px;
+        width:100px;
+    }
+    .button a{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-height:280px){
+    body{
+        min-height: 300px;
+        overflow-y:scroll;
+    }
 }
