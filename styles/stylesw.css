@@ -80,7 +80,7 @@ body {
     top:50%;
     left:50%;
     z-index:1;
-    animation: logo 10s ease-out 8.5s;
+    animation: logo 10s ease-out 6.5s;
     opacity:0;
     text-align:center;
 }
@@ -102,7 +102,7 @@ body {
 .crawl{
     position: absolute;
     top:100%;
-    animation: scrollup 60s linear 16.5s; 
+    animation: scrollup 60s linear 15s; 
 }
 .title{
     text-align:center;

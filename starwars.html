@@ -28,11 +28,22 @@
     <title>Star Wars Crawl</title>
 </head>
 <body>
-    <audio preload="auto" autoplay>
-        <source src="resources/starwarstheme.ogg" type="audio/ogg">
-        <source src="resources/starwarstheme.mp3" type="audio/mpeg">
-    </audio>    
-            
+    <audio id="theme_mp3" src="resources/starwarstheme.mp3"></audio>
+    <audio id="theme_ogg" src="resources/starwarstheme.ogg"></audio>
+    <script>
+        var themeMp3 = document.getElementById('theme_mp3');
+        var themeOgg = document.getElementById('theme_ogg');
+        if (themeMp3.canPlayType('audio/mpeg')){
+            var sound=themeMp3;
+        }
+        else if (themeOgg.canPlayType('audio/ogg')){
+            var sound=themeOgg;
+        }
+        function playAudio(){
+            sound.play();
+        }
+        setTimeout("playAudio()",5800);
+    </script>
     <div class="intro">Enim non sit laborum dolore deserunt</br> do irure adipisicing occaecat eu.</div>
     <div class="logo">LOREM IPSUM</div>
     <div class="star-wars">
