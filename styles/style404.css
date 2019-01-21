@@ -28,7 +28,7 @@ body{
     grid-template-rows: 10% 50% 10% 20% 10%;
     grid-template-columns: repeat(10, 10%);
     font-family: Arial, Helvetica, sans-serif;
-    background-image:url("brickwall.jpg");
+    background-image:url("../resources/brickwall.jpg");
     overflow:hidden;
 }
 section.mainbox{
