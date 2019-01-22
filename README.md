@@ -4,7 +4,7 @@ Welcome to my Github User Pages Site. This is the place where I host pages made 
 
 ## Getting Started
 
-You can either access the website using [THIS LINK](https://broodco.github.io/index.html) or access a specific url using this address : https://broodcoo.github.io/*NameOfTheHTML*.html
+You can either access the website using [THIS LINK](https://broodco.github.io/index.html) or access a specific url using this address : ht<span>tps://</span>broodcoo.github.io/*NameOfTheHTML*.html
 
 This HTML list is accessible in the root of the repository, as well as in this README.
 
