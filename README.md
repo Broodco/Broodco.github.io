@@ -15,13 +15,12 @@ An up-to-date web browser is advised.
 ## Pages
 
 * [**404 Page**](https://broodco.github.io/404.html) - Like the name suggest, the 404 page made for the website.
-* [**Curriculum Vitae**](https://broodco.github.io/curriculumvitae.html) - An *html* and *css* currivulum vitae.
+* [**Curriculum Vitae**](https://broodco.github.io/cv.html) - My web page CV.
 * [**Star Wars Crawl**](https://broodco.github.io/starwars.html) - A page made to reenact the Star Wars opening.
 * [**Tim Berners-Lee**](https://broodco.github.io/tim.html) - An exercise where I was asked to recreate a page.
 
 ## Work in Progress
 
-* An *Index* page for the website.
 * A functionning VCard using Javascript.
 * Remake the CV - with updated styling mostly.
 * Commenting every file done until now.
