@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="431.01123"
+   height="524.37421"
+   viewBox="0 0 114.03838 138.74068"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (ca053d0, 2019-01-16)"
+   sodipodi:docname="broodco_logo.svg">
+  <defs
+     id="defs2">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="26.458331 : 158.75 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="301.62498 : 142.875 : 1"
+       inkscape:persp3d-origin="148.49999 : 70.000004 : 1"
+       id="perspective5114" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="-16.061224"
+     inkscape:cy="213.3272"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px">
+    <inkscape:grid
+       type="xygrid"
+       id="grid5069"
+       originx="-58.073466"
+       originy="-41.735833" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-58.073472,-116.52349)">
+    <path
+       style="fill:none;stroke:#375661;stroke-width:10.58333302;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98860401"
+       d="m 84.574303,122.28387 v 63.68226 c 0,0 72.000197,6.79335 72.000197,-31.84113 0,-38.63449 -72.000197,-31.84113 -72.000197,-31.84113 z"
+       id="path5071"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccsc" />
+    <path
+       style="fill:none;stroke:#375661;stroke-width:10.58333302;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98860401"
+       d="m 84.666666,185.875 v 63.63092 c 0,0 82.153524,6.78788 82.153524,-31.81546 0,-38.60334 -82.153524,-31.81546 -82.153524,-31.81546 z"
+       id="path5071-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccsc" />
+    <path
+       style="fill:#375661;fill-opacity:1;stroke:#375661;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.98860401"
+       d="M 76.729165,117.08333 74.083332,254.66667 68.791665,117.08333 Z"
+       id="path5092"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:#375661;fill-opacity:1;stroke:#375661;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.98860401;"
+       d="m 66.145832,117.08333 h -7.9375 l 2.645834,137.58334 z"
+       id="path5094"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:#375661;fill-opacity:1;stroke:#375661;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.98860401"
+       d="m 63.499999,254.66667 h 7.9375 l -3.96875,-121.70834 z"
+       id="path5096"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="222.25"
+       y="175.29166"
+       id="text5154"><tspan
+         sodipodi:role="line"
+         id="tspan5152"
+         x="222.25"
+         y="184.65543"
+         style="stroke-width:0.26458332" /></text>
+  </g>
+</svg>
