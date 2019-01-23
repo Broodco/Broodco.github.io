@@ -14,6 +14,7 @@ An up-to-date web browser is advised.
 
 ## Pages
 
+* [**Index Page**](https://broodco.github.io/index.html) - Welcome page. Used as the starting page of the website.
 * [**404 Page**](https://broodco.github.io/404.html) - Like the name suggest, the 404 page made for the website.
 * [**Curriculum Vitae**](https://broodco.github.io/cv.html) - My web page CV.
 * [**Star Wars Crawl**](https://broodco.github.io/starwars.html) - A page made to reenact the Star Wars opening.
@@ -22,7 +23,7 @@ An up-to-date web browser is advised.
 ## Work in Progress
 
 * A functionning VCard using Javascript.
-* Remake the CV - with updated styling mostly.
+* Adapt the design of each page to mobile users.
 * Commenting every file done until now.
 
 ## Built With

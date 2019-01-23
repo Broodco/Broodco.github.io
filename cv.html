@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles/stylenewcv.css">
+        <script src="scripts/scriptindex.js"></script>
+        <title>Curriculum Vitae</title>
+    </head>
+    <body>
+        <!-- HEADER - also used in INDEX -->
+        <header class="fixe">
+            <ul class="horiz">
+                <li onclick="location.href='https://broodco.github.io/index.html';">Homepage</li>
+                <li onclick="location.href='https://broodco.github.io/404.html';">My 404 Page</li>
+                <li onclick="showdropdowna()" class="dropdown"> Exercises
+                    <div id="myDropdown-exos" class="dropdown-content">
+                        <a href="https://broodco.github.io/starwars.html">Star Wars Crawl</a>
+                        <a href="https://broodco.github.io/tim.html">Tim Berners-Lee</a>
+                    </div>
+                </li>
+                <li onclick="showdropdownb()" class="dropdown"> Contact
+                        <div id="myDropdown-contact" class="dropdown-content">
+                            <a href="https://github.com/broodco">My GitHub Profile</a>
+                            <a href="https://linkedin.com/broodco">My LinkedIn</a>
+                        </div>
+                    </li>
+            </ul>
+        </header>
+        <!-- ASIDE - contains picture and basic informations -->
+        <aside>
+            <div class="picture">
+                <img class="pic" src="resources/tete.jpeg"/>
+            </div>
+            <div class="basicInfos">
+                <h3>Basic Informations</h3>
+                <h4 class="bI">Birthdate</h4>
+                29/07/1994
+                <h4 class="bI">Adress</h4>
+                Rue Sterckx <br/> 1060 Saint-Gilles
+                <h4 class="bI">Phone Number</h4>
+                0032/498.14.98.61
+                <h4 class="bI">Mail</h4>
+                <span class="longstring"> broodcoorens.maxime@gmail.com </span>
+            </div>
+            <div class="contact">
+                <h3>Social Media Profiles</h3>
+                <h4 class="bI">GitHub</h4>
+                <a href="http://github.com/broodco">http://github.com/broodco</a>
+                <h4 class="bI">LinkedIn</h4>
+                <a href="http://linkedin.com/broodco">http://linkedin.com/broodco</a>
+
+            </div>
+        </aside>
+        <!-- MAIN - Traditional part of the CV -->
+        <main-part1>
+            <article class="desc">
+                <h1>Maxime Broodcoorens</h1>
+                <h5>Wannabe Web Developer <br/> Learner @BeCode Brussels</h5>
+
+            </article>
+            <article class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>
+                        <h6>Languages</h6>
+                        French : Perfect |
+                        English : Fluent |
+                        Dutch : Basic
+                    </li>
+                    <li>
+                        <h6>Information Technology</h6>
+                        Python | Computer Assembly | General IT
+                    </li>
+                    <li>
+                        <h6>Web Development</h6>
+                        HTML | CSS | Javascript
+                    </li>
+                    <li>
+                        <h6>Technical Knowledge</h6>
+                        Engineering basics | Construction | AutoCAD
+                    </li>
+                    <li>
+                        <h6>General</h6>
+                        Teamworker | Learner | Problem-Solver
+                    </li>
+                </ul>
+            </article>
+        </main-part1>
+        <main-part2>
+            <article class="exp">
+                <h2>Professional Experience</h2>
+                <div class="listed">
+                    <div class="left">
+                            10/2018 - 12/2018
+                    </div>
+                    <div class="right">
+                        Colruyt - Student Job
+                    </div>
+                </div>
+                <div class="listed">
+                    <div class="left">
+                            03/2018 - 05/2018
+                    </div>
+                    <div class="right">
+                        Piron Architectes - Internship
+                    </div>
+                </div>
+                <div class="listed">
+                    <div class="left">
+                            2015 - 2018
+                    </div>
+                    <div class="right">
+                        Potiez-Deman - Student Job | Mover
+                    </div>
+                </div>
+            </article>
+            <article class="edu">
+                <h2>Education</h2>
+                <div class="listed">
+                    <div class="left">
+                            01/2019 - Present
+                    </div>
+                    <div class="right">
+                            BeCode Brussels
+                    </div>
+                </div>
+                <div class="listed">
+                    <div class="left">
+                            2014 - 2018
+                    </div>
+                    <div class="right">
+                            ECAM Brussels Engineering School
+                    </div>
+                </div>
+                <div class="listed">
+                    <div class="left">
+                            2012 - 2014
+                    </div>
+                    <div class="right">
+                            Brussels School of of Engineering
+                    </div>
+                </div>
+            </article>
+            <article class="hob">
+                <h2>Interests</h2>
+                <div id="hobbies">Music | Playing drums | Running <br/>
+                    Technology | Sci-Fi & Horror Novels
+                </div>
+            </article>
+        </main-part2>
+    </body>
+</html>
