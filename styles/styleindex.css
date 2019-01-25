@@ -22,7 +22,7 @@ body{
     color: var(--color-6);
 }
 .layer{
-    background-image:url("blue_noise.png");
+    background-image:url("resources/blue_noise.png");
     mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
     -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
     position:fixed;
