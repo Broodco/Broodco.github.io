@@ -18,3 +18,22 @@ window.onclick = function(event){
         }
     }
 }
+
+// Script used for the Burger Menu 
+
+function showBurgerMenu(){ 
+    var menu = document.getElementById("responsive");
+    if (menu.style.display == "block"){
+        menu.style.display = "none";
+    }
+    else{
+        menu.style.display = "block";
+    }
+};
+
+function showdropdownc(){
+    document.getElementById("myDropdown-exos-mobile").classList.toggle("show");
+}
+function showdropdownd(){
+    document.getElementById("myDropdown-contact-mobile").classList.toggle("show");
+}

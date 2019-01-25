@@ -23,13 +23,32 @@
                     </div>
                 </li>
                 <li onclick="showdropdownb()" class="dropdown"> Contact
-                        <div id="myDropdown-contact" class="dropdown-content">
-                            <a href="https://github.com/broodco">My GitHub Profile</a>
-                            <a href="https://linkedin.com/broodco">My LinkedIn</a>
-                        </div>
-                    </li>
+                    <div id="myDropdown-contact" class="dropdown-content">
+                        <a href="https://github.com/broodco">My GitHub Profile</a>
+                        <a href="https://linkedin.com/broodco">My LinkedIn</a>
+                    </div>
+                </li>
             </ul>
+            <div onclick="showBurgerMenu()" class="burger"><img id="burgerIcon" src="resources/iconfinder_menu-alt_134216.svg"/></div>
         </header>
+        <nav id="responsive">
+            <ul class="vert">
+                <li onclick="location.href='https://broodco.github.io/cv.html';">My CV</li>
+                <li onclick="location.href='https://broodco.github.io/404.html';">My 404 Page</li>
+                <li onclick="showdropdownc()" class="dropdown"> Exercises
+                    <div id="myDropdown-exos-mobile" class="dropdown-content">
+                        <a href="https://broodco.github.io/starwars.html">Star Wars Crawl</a>
+                        <a href="https://broodco.github.io/tim.html">Tim Berners-Lee</a>
+                    </div>
+                </li>
+                <li onclick="showdropdownd()" class="dropdown"> Contact
+                    <div id="myDropdown-contact-mobile" class="dropdown-content">
+                        <a href="https://github.com/broodco">My GitHub Profile</a>
+                        <a href="https://linkedin.com/broodco">My LinkedIn</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
         <main>
             <article id="logo">
                 <img id="imglogo" src="resources/broodco_logo.svg"/>
