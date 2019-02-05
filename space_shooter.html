@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/script.js"></script>
+    <script>
+        window.onload = () => {
+            document.querySelector("#startBtn").addEventListener("click",startGame)
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Space Shooter</title>
+</head>
+<body>
+    <header class="fixe">
+        <ul class="horiz">
+            <li onclick="location.href='https://broodco.github.io/index.html';">Homepage</li>
+            <li onclick="location.href='https://broodco.github.io/404.html';">My 404 Page</li>
+            <li onclick="showdropdown('dropdown-a')" class="dropdown"> Exercises
+                <div id="dropdown-a" class="dropdown-content">
+                    <a href="https://broodco.github.io/starwars.html">Star Wars Crawl</a>
+                    <a href="https://broodco.github.io/tim.html">Tim Berners-Lee</a>
+                    <a href="https://broodco.github.io/cv.html">My CV</a>
+                </div>
+            </li>
+            <li onclick="showdropdown('dropdown-b')" class="dropdown"> Contact
+                <div id="dropdown-b" class="dropdown-content">
+                    <a href="https://github.com/broodco">My GitHub Profile</a>
+                    <a href="https://linkedin.com/broodco">My LinkedIn</a>
+                </div>
+            </li>
+        </ul>
+        <div onclick="showdropdown('nav_small')" class="burger"><img id="burgerIcon" src="resources/iconfinder_menu-alt_134216.svg"/></div>
+    </header>
+    <main>
+        <img src="public/vectors/spaceship.svg" id="spaceship"/>
+        <img src="public/vectors/alien.svg" id="alien"/>
+        <img src="public/vectors/laser_shots.svg"id="shots"/>
+        <div class="area">
+            <div class="splashScreen">
+                <h1>Space Shooter - Piou Piou Edition</h1>
+                <input id="startBtn" type="button" value="START"/>
+                <div class="infos">
+                    <ul>
+                        <li>Move the spaceship with the the left and the right arrow.</li>
+                        <li>Shoot with spacebar.</li>
+                        <li>The game ends when you hit the enemy 10 times.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="replay">
+                <h1>Game Over</h1>
+                <input id="replayBtn" type="button" value="PLAY AGAIN"/>
+                <h1 id="score"></h1>
+                <h2>Best scores :</h2>
+                <ul id="classment">
+                    
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html> 

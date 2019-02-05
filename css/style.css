@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin|Raleway:300i");
+@font-face {
+  font-family: "AtarianSystemExtended";
+  src: url("../public/fonts/sf-atarian-system/Atarian/SF Atarian System Extended.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+}
+
+:root {
+  --color-1: rgb(247, 249, 254);
+  --color-2: rgb(236, 241, 242);
+  --color-3: rgb(220, 232, 235);
+  --color-4: rgba(203, 219, 224, 0.295);
+  --color-5: rgb(190, 210, 217);
+  --color-6: rgb(55, 86, 97);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  height: 100vh;
+  min-height: 680px;
+  width: 100vw;
+  min-width: 900px;
+  background: #e6e6e6;
+}
+body .fixe {
+  font-family: "Cabin", Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-6);
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--color-5);
+}
+body .fixe .burger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+body .fixe .horiz {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .fixe .horiz li {
+  width: 200px;
+  height: 60px;
+  padding: 20px;
+  margin: 0 20px;
+  background: var(--color-1);
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+  border: 1px solid var(--color-5);
+  border-radius: 10px;
+}
+body .fixe .horiz li:hover, body .fixe .horiz li:focus {
+  -webkit-box-shadow: inset 0px 0px 10px 13px var(--color-4);
+  -moz-box-shadow: inset 0px 0px 10px 13px var(--color-4);
+  box-shadow: inset 0px 0px 10px 13px var(--color-4);
+  cursor: pointer;
+}
+body main {
+  font-family: "AtarianSystemExtended", "Cabin", Arial, Helvetica, sans-serif;
+  margin-top: 1em;
+  min-height: 600px;
+  min-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+body main .area {
+  height: 600px;
+  width: 800px;
+  border: 2px solid var(--color-6);
+}
+body main .area .splashScreen, body main .area .replay {
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .area .splashScreen h1, body main .area .replay h1 {
+  color: var(--color-3);
+  font-family: "AtarianSystemExtended", "Cabin", Arial, Helvetica, sans-serif;
+  text-align: center;
+  border: 1px solid var(--color-1);
+  padding: 0.5em;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+body main .area .splashScreen #startBtn, body main .area .replay #startBtn {
+  font-size: 20px;
+  padding: 1em 2em;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 2em;
+  font-family: "AtarianSystemExtended", "Cabin", Arial, Helvetica, sans-serif;
+}
+body main .area .splashScreen .infos, body main .area .replay .infos {
+  color: var(--color-3);
+  padding: 1em;
+  border: 1px solid var(--color-1);
+  border-radius: 4px;
+}
+body main .area .splashScreen .infos ul li, body main .area .replay .infos ul li {
+  list-style: none;
+  font-size: 20px;
+  padding: 0.2em;
+  font-family: "AtarianSystemExtended", "Cabin", Arial, Helvetica, sans-serif;
+}
+body main .area .replay {
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .area .replay h1, body main .area .replay h2 {
+  color: var(--color-3);
+  text-align: center;
+  border: 1px solid var(--color-1);
+  padding: 0.5em;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  font-family: "AtarianSystemExtended", "Cabin", Arial, Helvetica, sans-serif;
+}
+body main .area .replay #replayBtn {
+  font-size: 20px;
+  padding: 1em 2em;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 2em;
+  font-family: "AtarianSystemExtended", "Cabin", Arial, Helvetica, sans-serif;
+}
+body main .area .replay ul li {
+  list-style: none;
+  color: white;
+  font-family: "AtarianSystemExtended", "Cabin", Arial, Helvetica, sans-serif;
+}
+
+#spaceship, #alien, #shots {
+  display: none;
+}
+
+/* -----Drop Down Button ----- */
+.dropdown-content {
+  display: none;
+  position: relative;
+  top: 19px;
+  left: -10px;
+  background-color: var(--color-3);
+  width: 180px;
+  box-shadow: 0 8px 16px 0 var(--color-4);
+  z-index: 1;
+}
+.dropdown-content a {
+  background: var(--color-1);
+  padding: 20px;
+  text-decoration: none;
+  color: var(--color-6);
+  display: block;
+  border: 1px solid var(--color-5);
+}
+.dropdown-content a:hover {
+  -webkit-box-shadow: inset 0px 0px 10px 13px var(--color-4);
+  -moz-box-shadow: inset 0px 0px 10px 13px var(--color-4);
+  box-shadow: inset 0px 0px 10px 13px var(--color-4);
+}
+
+/*# sourceMappingURL=style.css.map */
