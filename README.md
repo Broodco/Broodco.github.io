@@ -19,6 +19,7 @@ An up-to-date web browser is advised.
 * [**Curriculum Vitae**](https://broodco.github.io/cv.html) - My web page CV.
 * [**Star Wars Crawl**](https://broodco.github.io/starwars.html) - A page made to reenact the Star Wars opening.
 * [**Tim Berners-Lee**](https://broodco.github.io/tim.html) - An exercise where I was asked to recreate a page.
+* [**Space Shooter Game**](https://broodco.github.io/space_shooter.html) - A space shooter game made with Canvas
 
 ## Work in Progress
 
@@ -32,6 +33,7 @@ An up-to-date web browser is advised.
 * CSS 
 * Javascript
 * [Less language extension for CSS](https://lesscss.org)
+* [Sass for CSS](https://sass-lang.com)
 
 ## Commentary.
 
