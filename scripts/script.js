@@ -42,7 +42,14 @@ function endGame(){
             ul.appendChild(li);
         }
     }
-    document.querySelector("#replayBtn").addEventListener("click",startGame);
+    document.querySelector("#replayBtn").removeEventListener("click",startGame);
+    replay()
+}
+
+function replay(){
+    setTimeout(function(){
+        document.querySelector("#replayBtn").addEventListener("click",startGame);
+    }, 1500);    
 }
 
 // Create the canvas into the html body
