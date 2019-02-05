@@ -182,8 +182,8 @@ function updateGameArea(){
         gameArea.stop();
         endGame();
     }
-    if (gameArea.keys && gameArea.keys[37]){spaceship.speedX = -10}
-    if (gameArea.keys && gameArea.keys[39]){spaceship.speedX = 10;}
+    if (gameArea.keys && gameArea.keys[37]){spaceship.speedX = -12}
+    if (gameArea.keys && gameArea.keys[39]){spaceship.speedX = 12;}
     // Next block creates a laser shot if the reload time is under 0
     // Each shot is part of an array named shotsfired, this way we can have multiple shots on screen at the same time
     if (gameArea.keys && gameArea.keys[32] && reload <= 0){
