@@ -221,9 +221,9 @@ function updateGameArea(){
 function orderScores(){
     for (i=0 ; i<bestScores.length;i++){
         if (bestScores[i] < 10){
-            bestScores[i] = ("0"+String(bestScores[i])).slice(-4);
+            bestScores[i] = ("0"+String(bestScores[i])).slice(-5);
         } else{
-            bestScores[i]=String(bestScores[i]).slice(-4);
+            bestScores[i]=String(bestScores[i]).slice(-5);
         }
     }
     bestScores.sort();
