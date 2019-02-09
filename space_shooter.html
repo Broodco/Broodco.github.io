@@ -8,6 +8,7 @@
     <script src="scripts/script.js"></script>
     <script>
         window.onload = () => {
+            dropEvent()
             document.querySelector("#startBtn").addEventListener("click",startGame)
         }
     </script>
@@ -19,21 +20,20 @@
         <ul class="horiz">
             <li onclick="location.href='https://broodco.github.io/index.html';">Homepage</li>
             <li onclick="location.href='https://broodco.github.io/404.html';">My 404 Page</li>
-            <li onclick="showdropdown('dropdown-a')" class="dropdown"> Exercises
-                <div id="dropdown-a" class="dropdown-content">
+            <li class="dropdown"> Exercises
+                <div class="dropdown-content">
                     <a href="https://broodco.github.io/starwars.html">Star Wars Crawl</a>
                     <a href="https://broodco.github.io/tim.html">Tim Berners-Lee</a>
                     <a href="https://broodco.github.io/cv.html">My CV</a>
                 </div>
             </li>
-            <li onclick="showdropdown('dropdown-b')" class="dropdown"> Contact
-                <div id="dropdown-b" class="dropdown-content">
+            <li class="dropdown"> Contact
+                <div class="dropdown-content">
                     <a href="https://github.com/broodco">My GitHub Profile</a>
                     <a href="https://www.linkedin.com/in/broodco/">My LinkedIn</a>
                 </div>
             </li>
         </ul>
-        <div onclick="showdropdown('nav_small')" class="burger"><img id="burgerIcon" src="resources/iconfinder_menu-alt_134216.svg"/></div>
     </header>
     <main>
         <img src="public/vectors/spaceship.svg" id="spaceship"/>
@@ -56,9 +56,7 @@
                 <input id="replayBtn" type="button" value="PLAY AGAIN"/>
                 <h1 id="score"></h1>
                 <h2>Best scores :</h2>
-                <ul id="classment">
-                    
-                </ul>
+                <ul id="classment"></ul>
             </div>
         </div>
     </main>

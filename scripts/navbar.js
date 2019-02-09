@@ -1,9 +1,15 @@
-// Dropdown buttons
 
-function showdropdown(list_class_name){
-    document.getElementById(list_class_name).classList.toggle("show");
+function dropEvent(){
+    dropBtns = document.querySelectorAll(".dropdown")
+    for (let i=0 ; i<dropBtns.length ; i++){
+        dropBtns[i].addEventListener("click",function(e){
+            console.log(e)
+            console.log(e.target)
+            console.log(e.target.firstElementChild )
+            e.target.firstElementChild.classList.toggle("show");
+        })
+    }
 }
-
 // Hide dropdown lists if the user clicks elsewhere
 
 window.onclick = function(event){
@@ -18,4 +24,3 @@ window.onclick = function(event){
         }
     }
 }
-

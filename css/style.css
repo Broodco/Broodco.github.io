@@ -184,4 +184,8 @@ body main .area .replay ul li {
   box-shadow: inset 0px 0px 10px 13px var(--color-4);
 }
 
+.show{
+  display:block;
+}
+
 /*# sourceMappingURL=style.css.map */
