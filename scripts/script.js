@@ -113,20 +113,6 @@ function drawcomp(src,x,y,width,height){
     this.newPos = function(){
         this.x += this.speedX;
     }
-    this.collision = function(laserObj){
-        var a_left = this.x;
-        var a_right = this.x + (this.width);
-        var a_bottom = this.y + (this.height);
-        var las_center = laserObj.x + 100;
-        var las_top = laserObj.y;
-        if ((a_bottom>=las_top) && (a_left <= las_center) && (a_right >= las_center)
-        ){
-            crash = true;
-        }else{
-            crash = false;
-        }
-        return crash;
-    }
 }
 
 // Draw the laser shots image onto the canvas
@@ -141,15 +127,28 @@ function drawshots(){
     this.speedY = -25;
     this.width = 200;
     this.height = 25.86;
-}
-
-drawshots.prototype.newPos = function(){
-    this.y += this.speedY;
-}
-
-drawshots.prototype.update = function(){
-    ctx = gameArea.context;
-    ctx.drawImage(this.src,this.x,this.y,this.width,this.height);
+    this.newPos = function(){
+        this.y += this.speedY;
+    }
+    this.update = function(){
+        ctx = gameArea.context;
+        ctx.drawImage(this.src,this.x,this.y,this.width,this.height);    
+    }
+    this.collision = function(alienObj){
+        crash = [false,0]
+        var a_left = alienObj.x;
+        var a_right = alienObj.x + (alienObj.width);
+        var a_bottom = alienObj.y + (alienObj.height);
+        var las_center = this.x + 100;
+        if ((a_left <= las_center) && (a_right >= las_center)){
+            crash[0] = true;
+            crash[1] = a_bottom
+        }else{
+            crash[0] = false;
+            crash[1] = 0;
+        }
+        return crash;
+    }
 }
 
 // Constructor to create a text element
@@ -192,33 +191,33 @@ function updateGameArea(){
     if (gameArea.keys && gameArea.keys[37]){spaceship.speedX = -12}
     if (gameArea.keys && gameArea.keys[39]){spaceship.speedX = 12;}
     // Next block creates a laser shot if the reload time is under 0
-    // Each shot is part of an array named shotsfired, this way we can have multiple shots on screen at the same time
     if (gameArea.keys && gameArea.keys[32] && reload <= 0){
         shotsfired = new drawshots();
+        endShot = shotsfired.collision(alien)[1]; // Calculate the position where the shot ends
+        hit = shotsfired.collision(alien)[0]; // Determine if the shot ends because of a collision with the target or not
         shotexist = true;
         reload = 20;
     }
     spaceship.newPos();
     spaceship.update();
     alien.update();
-    // Updates the different shots only if there is one
+
+    // Makes the shot move upwards if it exists
     if (shotexist == true){
         shotsfired.newPos();
         shotsfired.update();
-        if ((shotsfired.y) < 0){
-            shotsfired = 0;
+        if ((shotsfired.y) < endShot){
+            if (hit == true){ // If the shot has run its course, checks if it is due to a collision with the target or going out of the screen
+                targetsCount += 1; // If it's a collision, increases the count and create a new target in a random place
+                alien = 0;
+                alien.x = getRandomPosition()[0];
+                alien.y = getRandomPosition()[1];
+                alien = new drawcomp(document.querySelector('#alien'),getRandomPosition()[0],getRandomPosition()[1],120,120);
+            } else {
+                console.log("out")
+            }
+            shotsfired = 0; // Then destroy the shot
             shotexist = false;
-            console.log("out")
-        }
-        // Checks if laser shots and the target are in the same place. If so, deletes both, specify that there's no current shot and recreates a target at a random position.
-        else if (alien.collision(shotsfired)==true){
-            targetsCount += 1;
-            alien = 0;
-            alien.x = getRandomPosition()[0];
-            alien.y = getRandomPosition()[1];
-            shotsfired = 0;
-            shotexist = false;
-            alien = new drawcomp(document.querySelector('#alien'),getRandomPosition()[0],getRandomPosition()[1],120,120);
         }
     }
 }
